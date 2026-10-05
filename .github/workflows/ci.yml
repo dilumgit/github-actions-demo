@@ -18,5 +18,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Run calculator
-        run: python calculator.py
+      - name: Install pytest
+        run: pip install pytest
+
+      - name: Run tests
+        run: pytest
